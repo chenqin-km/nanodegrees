@@ -131,6 +131,12 @@
 按选取的特征按用户分组，汇总所有的行为和事件，在此过程中，我发现听歌的事件在数量级上远大于其他事件，决定废弃听歌事件，以免对其他特征干扰太大
 
 #### 探索免费用户的行为
+
+
+![image](https://github.com/chenqin-km/nanodegrees/blob/master/images/free_users.png)
+![image](https://github.com/chenqin-km/nanodegrees/blob/master/images/free_cancel_users.png)
+
+
 从免费用户的统计图表来看：
 - 广告点击事件`advert`的占比远高于其他事件
 - 流失客户交友`friend`的占比低于存留用户
@@ -138,17 +144,27 @@
 
 
 #### 探索付费用户的行为
-![image](https://github.com/chenqin-km/nanodegrees/blob/master/images/free%20users%20acts%20statistic.png)
+
+
+![image](https://github.com/chenqin-km/nanodegrees/blob/master/images/paid_users.png)
+![image](https://github.com/chenqin-km/nanodegrees/blob/master/images/paid_churn_users.png)
 
 从付费用户的统计图表来看：
 - 广告`advert`对用户的干扰占比很小，添加歌曲`addplaylist`和交友`friend`占比变高起来
+
+![image](https://github.com/chenqin-km/nanodegrees/blob/master/images/paid_down_users.png)
+
 
 从付费用户发生降级行为的统计图表来看：
 - 点击降级页面的占比高于整体付费用户水平
 - 最终发生降低的占比高于整体付费用户水平
 
 #### 探索用户升级的行为
-- 从最终升级为付费用户的免费用户来看，想要升级的动作占比高较高
+
+![image](https://github.com/chenqin-km/nanodegrees/blob/master/images/upgraded_users.png)
+
+
+- 从最终升级为付费用户的免费用户来看，想要升级的动作占比比较高
 
 ### 结论
 - 广告是影响免费用户使用的一个关键特征
