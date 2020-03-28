@@ -138,6 +138,8 @@
 
 
 #### 探索付费用户的行为
+![image](https://github.com/chenqin-km/nanodegrees/blob/master/images/free%20users%20acts%20statistic.png)
+
 从付费用户的统计图表来看：
 - 广告`advert`对用户的干扰占比很小，添加歌曲`addplaylist`和交友`friend`占比变高起来
 
