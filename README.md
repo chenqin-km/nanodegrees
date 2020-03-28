@@ -67,8 +67,7 @@
 - `artist`、`song`、`length`存在缺失值，条数都为228108
 
 ### 清洗
-- 去除`userId`为空字符串的数据
-
+- 去除`userId`为空字符串的数据：清洗完`userId`列为空值的数据后，数据条数与`userAgent`,`registration`,`location`,`firstName`,`lastName`,`gender`列一致了
 
 ## 探索性数据分析
 用户访问页面的主要行为有：
@@ -128,7 +127,13 @@
 
 12.`lv`:标识用户付费还是免费
 
-按选取的特征按用户分组，汇总所有的行为和事件，在此过程中，我发现听歌的事件在数量级上远大于其他事件，决定废弃听歌事件，以免对其他特征干扰太大
+按选取的特征按用户分组，汇总所有的行为和事件
+
+
+![image](https://github.com/chenqin-km/nanodegrees/blob/master/images/statistic_data.png)
+
+
+在此过程中，我发现听歌的事件在数量级上远大于其他事件，决定废弃听歌事件，以免对其他特征干扰太大
 
 #### 探索免费用户的行为
 
@@ -199,6 +204,9 @@
 
 处理完成后，对特征进行归一化，最终创建一个叫做`scaledfeatures2`的向量，用于机器学习
 
+![image](https://github.com/chenqin-km/nanodegrees/blob/master/images/model_data.png)
+
+
 ## 建模
 
 **最终需要解决的问题是一个二分类问题**
@@ -220,6 +228,10 @@
 3.使用决策树模型进行测试，得到f1分数和学习时间
 
 4.比较两种模型的准确率，如果两种模型的f1分数低于0.9，尝试选择其他模型；如果效果较好，比较两个模型的学习效率
+
+![image](https://github.com/chenqin-km/nanodegrees/blob/master/images/lr.png)
+
+![image](https://github.com/chenqin-km/nanodegrees/blob/master/images/dt.png)
 
 ### 建模结论
 1.逻辑回归模型的f1分数为0.9997，验证集预测时间用时50.8秒
