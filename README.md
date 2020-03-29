@@ -114,4 +114,4 @@
 
 ## 项目文件 <a name="files"></a>
 * `Sparkify-zh.ipynb` 项目可执行文件
-* `blog.md` 项目分析的博客 [here](https://medium.com/@michel.naslund/exploring-customer-segments-and-predicting-customer-response-361e1f097bd9)
+* `blog.md` 项目分析的博客 [这里](https://github.com/chenqin-km/nanodegrees/blob/master/blog.md)
